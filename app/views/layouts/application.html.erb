@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hospital</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	
+	<div id ="nav">
+	<ul>
+	  
+      <li><%= link_to "Doctors", doctors_path%></li>
+      <li><%= link_to "Appointments", appointments_path%></li>
+      <li><%= link_to "Secretaries", secretaries_path%></li>
+      <li><%= link_to "Patients", patients_path%></li>
+      
+    </ul>
+</div>
+
+<%= yield %>
+
+</body>
+</html>
